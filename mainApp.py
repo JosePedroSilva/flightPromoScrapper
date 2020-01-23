@@ -17,7 +17,6 @@ def fly4free(kw, headers):
     page_fly4free = requests.get(URL_fly4free, headers=headers)
     soup_fly4free = BeautifulSoup(page_fly4free.text, 'html.parser')
     result_fly4free = str(soup_fly4free.findAll(attrs='entry__title'))
-    print(result_fly4free)
     for word in kw:
         if word.lower() in result_fly4free.lower():
             print(f'Found {word} in fly4free')
