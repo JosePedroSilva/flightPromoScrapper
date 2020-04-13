@@ -1,0 +1,250 @@
+{
+    "Quotes": [
+        {
+            "QuoteId": 1,
+            "MinPrice": 329.0,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 51535,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-19T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-16T11:31:00"
+        },
+        {
+            "QuoteId": 2,
+            "MinPrice": 375.0,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 52147,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-26T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-19T01:31:00"
+        },
+        {
+            "QuoteId": 3,
+            "MinPrice": 299.0,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 65747,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-25T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-23T14:01:00"
+        },
+        {
+            "QuoteId": 4,
+            "MinPrice": 319.0,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 72991,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-24T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-21T22:10:00"
+        },
+        {
+            "QuoteId": 5,
+            "MinPrice": 397.0,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 72991,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-28T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-17T19:00:00"
+        },
+        {
+            "QuoteId": 6,
+            "MinPrice": 369.0,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 74716,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-06T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-22T00:07:00"
+        },
+        {
+            "QuoteId": 7,
+            "MinPrice": 444.0,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1712
+                ],
+                "OriginId": 82049,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-09T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-21T21:22:00"
+        },
+        {
+            "QuoteId": 8,
+            "MinPrice": 367.0,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 83986,
+                "DestinationId": 54215,
+                "DepartureDate": "2020-02-18T00:00:00"
+            },
+            "QuoteDateTime": "2020-01-23T03:51:00"
+        }
+    ],
+    "Places": [
+        {
+            "PlaceId": 51535,
+            "IataCode": "FAO",
+            "Name": "Faro",
+            "Type": "Station",
+            "SkyscannerCode": "FAO",
+            "CityName": "Faro",
+            "CityId": "FARO",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 52147,
+            "IataCode": "FNC",
+            "Name": "Madeira",
+            "Type": "Station",
+            "SkyscannerCode": "FNC",
+            "CityName": "Madeira",
+            "CityId": "FUNC",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 54215,
+            "IataCode": "GIG",
+            "Name": "Rio De Janeiro Internacional",
+            "Type": "Station",
+            "SkyscannerCode": "GIG",
+            "CityName": "Rio De Janeiro",
+            "CityId": "RIOA",
+            "CountryName": "Brazil"
+        },
+        {
+            "PlaceId": 56818,
+            "IataCode": "HOR",
+            "Name": "Horta",
+            "Type": "Station",
+            "SkyscannerCode": "HOR",
+            "CityName": "Horta",
+            "CityId": "HORT",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 65747,
+            "IataCode": "LIS",
+            "Name": "Lisbon",
+            "Type": "Station",
+            "SkyscannerCode": "LIS",
+            "CityName": "Lisbon",
+            "CityId": "LISB",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 72991,
+            "IataCode": "OPO",
+            "Name": "Porto",
+            "Type": "Station",
+            "SkyscannerCode": "OPO",
+            "CityName": "Porto",
+            "CityId": "PORT",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 74716,
+            "IataCode": "PDL",
+            "Name": "Ponta Delgada",
+            "Type": "Station",
+            "SkyscannerCode": "PDL",
+            "CityName": "Ponta Delgada",
+            "CityId": "PONT",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 74968,
+            "IataCode": "PIX",
+            "Name": "Pico Island",
+            "Type": "Station",
+            "SkyscannerCode": "PIX",
+            "CityName": "Pico Island",
+            "CityId": "PICO",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 75679,
+            "IataCode": "PXO",
+            "Name": "Porto Santo",
+            "Type": "Station",
+            "SkyscannerCode": "PXO",
+            "CityName": "Porto Santo",
+            "CityId": "PORY",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 82049,
+            "IataCode": "SMA",
+            "Name": "Santa Maria",
+            "Type": "Station",
+            "SkyscannerCode": "SMA",
+            "CityName": "Santa Maria",
+            "CityId": "SANV",
+            "CountryName": "Portugal"
+        },
+        {
+            "PlaceId": 83986,
+            "IataCode": "TER",
+            "Name": "Terceira Lajes",
+            "Type": "Station",
+            "SkyscannerCode": "TER",
+            "CityName": "Terceira Lajes",
+            "CityId": "TERC",
+            "CountryName": "Portugal"
+        }
+    ],
+    "Carriers": [
+        {
+            "CarrierId": 1712,
+            "Name": "SATA Air Acores"
+        },
+        {
+            "CarrierId": 1760,
+            "Name": "TAP"
+        }
+    ],
+    "Currencies": [
+        {
+            "Code": "EUR",
+            "Symbol": "\u20ac",
+            "ThousandsSeparator": ".",
+            "DecimalSeparator": ",",
+            "SymbolOnLeft": false,
+            "SpaceBetweenAmountAndSymbol": true,
+            "RoundingCoefficient": 0,
+            "DecimalDigits": 2
+        }
+    ]
+}
