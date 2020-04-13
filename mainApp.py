@@ -1,38 +1,26 @@
-import requests
-from bs4 import BeautifulSoup
+"""Runs the webscrapper and prints the results on the console.
+
+Requires:
+-os
+-pyfiglet
+"""
+import os
+from webScrapper import *
+from pyfiglet import figlet_format
 
 kw = ['portugal', 'brasil', 'brazil', 'porto', 'oporto',
       'porto alegre', 'rio de janeiro', 'são paulo', 'canada', 'lisbon', 'lisboa']
 
+Agent = os.environ.get('WebAgent')
 headers = {
-    "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'}
+    "User-Agent": Agent}
 
 
-def fly4free(kw, headers):
-    """
-        Search for promos on www.fly4free.com
-    """
-    URL_fly4free = 'https://www.fly4free.com/flights/flight-deals/europe/'
-
-    page_fly4free = requests.get(URL_fly4free, headers=headers)
-    soup_fly4free = BeautifulSoup(page_fly4free.text, 'html.parser')
-    result_fly4free = str(soup_fly4free.findAll(attrs='entry__title'))
-    for word in kw:
-        if word.lower() in result_fly4free.lower():
-            print(f'Found {word} in fly4free')
-
-
-def travelfree(kw, headers):
-    URL_travelfree = 'https://travelfree.info/'
-
-    page_travelfree = requests.get(URL_travelfree, headers=headers)
-    soup_travelfree = BeautifulSoup(page_travelfree.text, 'html.parser')
-    result_travelfree = str(soup_travelfree.findAll(
-        attrs='post-title entry-title'))
-    for word in kw:
-        if word.lower() in result_travelfree.lower():
-            print(f'Found {word} in travelfree')
-
-
-fly4free(kw, headers)
-travelfree(kw, headers)
+if __name__ == '__main__':
+    print(figlet_format("Promo Scanner"))
+    print('Flight4Free:')
+    fly4free(kw, headers)
+    print('')
+    print('TravelFree:')
+    travelfree(kw, headers)
+    print('')
